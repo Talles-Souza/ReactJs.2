@@ -1,18 +1,14 @@
-export default function App() {
-
-  const Bemvindo = () => <h2>Bem-vindo</h2>
-  const PassandoProps = (props) => {
-    return (
-      <div>
-        <h2>Bem-vindo {props.nome} </h2>
-      </div>
-    );
-  }
-
-  return (<div>
-
-    <Bemvindo />
-    <PassandoProps nome="Talles" />
-    <h1>Bem vindo ao sistema</h1>
-  </div>);
+import React from "react";
+import { Relog } from "./Pages/relogio";
+import Member from "./components/member/member";
+function App() {
+  return (
+    <div>
+      {/* <h1>olá</h1>
+      <Relog /> */}
+      <Member name="Visitante" />
+    </div>
+  );
 };
+
+export default App;
